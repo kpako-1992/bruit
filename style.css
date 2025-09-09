@@ -67,6 +67,22 @@ img.profile { width: 200px; border-radius: 50%; border: 3px solid #fff; }
 }
 .cv-btn-container a:hover { background: #00b89f; color: #fff; }
 
+/* Bouton CV */
+a.cv-btn {
+  background: #00e0c6;
+  color: #111;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+a.cv-btn:hover {
+  background: #00b89f;
+  color: #fff;
+}
+
 /* Compétences */
 .skills-container { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 30px; }
 .skills-box { flex: 1; min-width: 250px; background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.2); }
@@ -111,4 +127,5 @@ footer .row p:last-child { margin-left: auto; }
   .row { flex-direction: column; gap: 20px; }
   .row p, .row img.profile { order: unset; }
 }
+
 
