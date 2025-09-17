@@ -6,6 +6,27 @@
   <title>Portfolio - Ing. Prince de Jésus KPAKO</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<script>
+  const toggleBtn = document.querySelector(".menu-toggle");
+  const nav = document.querySelector("header nav");
+
+  toggleBtn.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    toggleBtn.classList.toggle("active"); // ✅ animation burger
+  });
+
+  // Sélectionne les éléments
+const toggleBtn = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".menu");
+
+// Ouvre/ferme le menu au clic
+toggleBtn.addEventListener("click", () => {
+  menu.classList.toggle("active");
+  toggleBtn.classList.toggle("open");
+});
+
+</script>
+
 <body>
   <header>
   <div class="left">
@@ -14,6 +35,14 @@
       <span class="firstname">Prince Marlain Dieubeni</span>
     </h1>
   </div>
+
+  <!-- ✅ Bouton menu burger animé -->
+<button class="menu-toggle" aria-label="Ouvrir le menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
   <div class="right">
     <nav>
       <a href="#intro">Accueil</a>
